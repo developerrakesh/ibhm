@@ -1,0 +1,466 @@
+/****** Css Resets Start *******/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****** Css Resets End ********/
+
+/****** Variables Start ********/
+:root {
+	--color-1:#516B71;
+	--color-2: #38444C;
+	--color-3: #F9FFFF;
+	--bg-color: #F5FAFA;
+	--header-content-width: 25.5rem;
+}
+/****** Variables End ********/
+
+/****** Main Styles Start ********/
+
+html { font-size: 80%; } 
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+    padding-inline: 4.5rem;
+	max-width: 1400px;
+	margin-inline: auto;
+}
+
+.header {
+	background-image: url('images/bg1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 1.75rem;
+	padding-bottom: 13.75rem;
+	color: #fff;
+}
+
+.header .menu {
+	display: flex;
+}
+
+.header .cta {
+	margin-left: auto;
+	align-self: start;
+	margin-top: 1rem;
+	background-color: #FDD869;
+	color: #38444C;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	font-weight: 400;
+	border: none;
+	text-transform: uppercase;
+	padding: .75rem 3rem;
+	cursor: pointer;
+}
+
+.header h1 {
+	margin-top: 9.688rem;
+	margin-bottom: 1.25rem;
+	font-weight: 700;
+	font-size: 3.75rem;
+	line-height: 1.1;
+	max-width: var(--header-content-width);
+}
+
+.header p {
+	max-width: var(--header-content-width);
+	font-weight: 300;
+	font-size: 1.375rem;
+	line-height: 1.2;
+	color: var(--color-3)
+} 
+
+.cards {
+	padding-block: 7.875rem 8.25rem;
+	background-color: var(--bg-color);
+}
+
+.cards h2 {
+	font-weight: 700;
+	text-align: center;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: var(--color-1);
+	margin-bottom: 5.75rem;
+}
+
+.cards .cards-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 2.5rem;
+}
+
+.cards .card {
+	text-align: center;
+	max-width: 21.69rem;
+}
+
+.cards img {
+	width: 7.56rem;
+	height: 7.56rem;
+}
+
+.cards h3 {
+	margin-block: 2.187rem 1.187rem;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1.2;
+	color: var(--color-1);
+}
+
+.cards p {
+	font-weight: 300;
+	font-size: 1.375rem;
+	line-height: 1.2;
+    color: var(--color-2);
+}
+
+.categories {
+	padding-block: 8.375rem 10.56rem;
+	text-align: center;
+}
+
+.categories h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: var(--color-1);
+	margin-bottom: 5.375rem;
+}
+
+.categories .category-container {
+	display: inline-flex;
+	gap: 3.5rem;
+}
+
+.categories .category {
+	max-width: 24.6875rem;
+	aspect-ratio: 395 / 626;
+	border-radius: 4.5rem;
+	padding: 2.75rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+.categories .category-1 {
+	background-image: url('images/category_bg1.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.categories .category-2 {
+	background-image: url('images/category_bg2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.categories .category-3 {
+	background-image: url('images/category_bg3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.categories h3 {
+	font-weight: 400;
+	font-size: 2.75rem;
+	line-height: 1.2;
+	margin-bottom: 3.125rem;
+	color: var(--color-3);
+}
+
+.categories li {
+	font-weight: 400;
+	font-size: 1.375rem;
+	line-height: 1.2;
+	max-width: 70%;
+	margin-inline: auto;
+}
+
+.treatments {
+	
+	background-position: center center;
+}
+
+.treatments .treatments-wrapper {
+	background: linear-gradient(90deg, rgba(223, 240, 240, .7) 50%, rgba(255, 246, 218, .7) 50%), url('images/treatments_bg.svg');
+	padding: 15.31rem 4.375rem;
+	display: flex;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.treatments .treatment {
+	flex: 1;
+	text-align: center;
+}
+
+.treatments h3 {
+	margin-bottom: 4.6875rem;
+	font-weight: 700;
+	color: var(--color-1);
+	font-size: 2.75rem;
+	line-height: 1.2;
+}
+
+.treatments p {
+	max-width: 25rem;
+	font-weight: 300;
+	font-size: 1.375rem;
+	line-height: 1.2;
+	color: var(--color-2);
+	margin-inline: auto;
+}
+
+.doctor {
+	padding-block: 11.56rem;
+}
+
+.doctor .wrapper {
+	display: flex;
+	gap: 3rem;
+}
+
+.doctor img {
+	width: 21.31rem;
+	height: 21.31rem;
+	margin-bottom: 1rem;
+	border: 1px solid #d8eaea;
+	border-radius: 5rem;
+}
+
+.doctor figcaption {
+	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.2;
+	color: var(--color-2);
+	text-align: center;
+}
+
+.doctor .dr-name {
+	display: block;
+	margin-bottom: .31rem;
+	font-weight: 400;
+	font-size: 1.375rem;
+}
+
+.doctor p {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 2.25rem;
+	line-height: 1.2;
+	color: var(--color-1);
+	margin-top: 2rem;
+	background-image: url('images/quotes.svg');
+	background-repeat: no-repeat;
+	background-size: 7rem 6.57rem;
+	padding-top: 3.3rem;
+	padding-left: 2.5rem;
+}
+
+.stories {
+	padding-block: 7.75rem 10rem;
+	background-color: var(--bg-color);
+	text-align: center;
+}
+
+.stories h2 {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.2;
+	color: var(--color-1);
+	text-align: center;
+	margin-bottom: 3.19rem;
+}
+
+.stories .stories-container {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.stories .swiper {
+	width: 29.2rem;
+	height: 36.125rem;
+	padding-inline: 3rem;
+}
+
+@media screen and (min-width: 750px) {
+	.stories .swiper {
+		width: 95%;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	.stories .swiper {
+		width: 50.63rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.stories .swiper {
+		width: 95%;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	.stories .swiper {
+		width: 84rem;
+	}
+}
+
+.stories .swiper::after {
+	content: '';
+	width: 3rem;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+	background-color: var(--bg-color);
+}
+
+.stories .swiper::before {
+	content: '';
+	width: 3rem;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+	background-color: var(--bg-color);
+}
+
+.stories .story {
+	border: 1px solid #d8eaea;
+	border-radius: 4.5rem;
+	background-color: #fff;
+	padding: 3rem 2.5rem 7.5rem;
+	width: 24.69rem;
+	display: inline-block;
+	text-align: left;
+	white-space: normal;
+}
+
+.stories .swiper-button-prev:after, .stories .swiper-button-next:after {
+	color: var(--color-2);
+	font-size: 2rem;
+}
+
+.stories .swiper-button-prev:after {
+	margin-right: 2rem;
+}
+
+.stories .swiper-button-next:after {
+	margin-left: 2rem;
+}
+
+.stories h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.2;
+	color: var(--color-2);
+	margin-bottom: 1rem;
+}
+
+.stories .designation {
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	color: var(--color-1);
+	margin-bottom: 2.25rem;
+}
+
+.stories p {
+	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.2;
+	color: var(--color-2);
+	background-image: url('images/quotes2.svg');
+	background-repeat: no-repeat;
+	background-size: 3.125rem 3.125rem;
+	padding-top: 1.5rem;
+}
+
+.footer {
+	padding-block: 3.125rem 1.44rem;
+	background-color: var(--color-2);
+	color: var(--bg-color);
+	text-align: right;
+}
+
+.footer a {
+	text-decoration: none;
+	font-weight: 400;
+	color: #fff;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	padding: .75rem 3rem;
+	background-color: var(--color-1);
+	display: inline-block;
+	margin-bottom: 5.25rem;
+}
+
+.footer .copyright {
+	font-weight: 300;
+	font-size: 1.125rem;
+	text-align: center;
+	line-height: 1.2;
+	color: var(--color-3);
+	padding-top: 1.125rem;
+	border-top: 1px solid var(--color-1);
+	width: 70%;
+	margin-inline: auto;
+}
+/****** Main Styles End ********/
