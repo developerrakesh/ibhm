@@ -7,10 +7,10 @@ const swiper = new Swiper('.swiper', {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            spaceBetween: 15
+            spaceBetween: 35
         },
-        // when window width is >= 750px
-        750: {
+        // when window width is >= 1000px
+        1000: {
             slidesPerView: 2,
             spaceBetween: 20
         },
