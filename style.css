@@ -624,6 +624,7 @@ body {
 	height: 6.625rem;
 	border: 1px solid #d8eaea;
 	border-radius: 1.5rem;
+	display: inline-block;
 }
 
 @media screen and (min-width: 600px) {
