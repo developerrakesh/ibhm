@@ -517,11 +517,13 @@ body {
 }
 
 .treatments .treatment:nth-of-type(1) {
-	background-color: #dff0f0;
+	background: linear-gradient(90deg, rgba(223, 240, 240, .7) 100%, rgba(255, 246, 218, .7) 0%), url('images/treatment1_bg.svg') no-repeat center right;
+	background-size: 9rem;
 }
 
 .treatments .treatment:nth-of-type(2) {
-	background-color: #fff6da;
+	background: linear-gradient(90deg, rgba(255, 246, 218, .7) 0%, rgba(255, 246, 218, .7) 100%), url('images/treatment2_bg.svg') no-repeat center left;
+	background-size: 9rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -531,11 +533,11 @@ body {
 	}
 
 	.treatments .treatment:nth-of-type(1) {
-		background-color: transparent;
+		background: none;
 	}
 
 	.treatments .treatment:nth-of-type(2) {
-		background-color: transparent;
+		background: none;
 	}
 }
 
